@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "amazon_ses.gemspec",
      "lib/amazon_ses.rb",
      "test/helper.rb",
      "test/test_amazon_ses.rb"
