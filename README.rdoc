@@ -1,6 +1,7 @@
 = amazon_ses
 
-Description goes here.
+Really simple gem that allows you to send email through amazon simple email
+service via the standard rails mailer.
 
 == Note on Patches/Pull Requests
  

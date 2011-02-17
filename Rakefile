@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "amazon_ses"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{allows you to send email through amazons simple email service}
+    gem.description = %Q{wrapper for the simple email service api}
     gem.email = "jeff.durand@gmail.com"
     gem.homepage = "http://github.com/johnnyiller/amazon_ses"
     gem.authors = ["jeff durand"]
