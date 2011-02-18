@@ -7,4 +7,6 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'amazon_ses'
 
 class Test::Unit::TestCase
+  
+  #YAML.load_file("./test/credentials.yml").each { |key,value| instance_variable_set("@#{key}", value) }
 end
