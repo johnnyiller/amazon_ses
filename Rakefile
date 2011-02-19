@@ -11,6 +11,7 @@ begin
     gem.homepage = "http://github.com/johnnyiller/amazon_ses"
     gem.authors = ["jeff durand"]
     gem.add_dependency "mail"
+    gem.add_dependency "xml-simple"
     #gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
