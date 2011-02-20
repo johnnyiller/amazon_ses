@@ -19,7 +19,13 @@ module AmazonSES
       request.add_field("Date",date)
       request.add_field("X-Amzn-Authorization",AmazonSES::Base.sign_https_request(request,date,secret,key))
       response = http.request(request)
-      return response
+      case response
+        when Net::HTTPSuccess then return response
+        when Net::HTTPClientError then raise response.body
+        when Net::HTTPServerError then raise response.body
+        else raise response.body
+      end
+      #return response
     end
     
   end

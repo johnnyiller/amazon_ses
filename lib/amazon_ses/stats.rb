@@ -2,10 +2,18 @@ module AmazonSES
 
   class Stats
       def self.send_quota(secret,key)
-        AmazonSES::Base.make_request({"Action"=>"GetSendQuota"},secret,key)
+        begin 
+          AmazonSES::Base.make_request({"Action"=>"GetSendQuota"},secret,key)
+        rescue Exception=>e
+          raise e.to_s
+        end
       end
       def self.send_stats(secret,key)
-        AmazonSES::Base.make_request({"Action"=>"GetSendStatistics"},secret,key)
+        begin
+          AmazonSES::Base.make_request({"Action"=>"GetSendStatistics"},secret,key)
+        rescue Exception=>e
+          raise e.to_s
+        end
       end
   end
   class StatObject

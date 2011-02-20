@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{amazon_ses}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["jeff durand"]
-  s.date = %q{2011-02-17}
+  s.date = %q{2011-02-19}
   s.description = %q{wrapper for the simple email service api}
   s.email = %q{jeff.durand@gmail.com}
   s.extra_rdoc_files = [
@@ -49,11 +49,14 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<mail>, [">= 0"])
+      s.add_runtime_dependency(%q<xml-simple>, [">= 0"])
     else
       s.add_dependency(%q<mail>, [">= 0"])
+      s.add_dependency(%q<xml-simple>, [">= 0"])
     end
   else
     s.add_dependency(%q<mail>, [">= 0"])
+    s.add_dependency(%q<xml-simple>, [">= 0"])
   end
 end
 
