@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{amazon_ses}
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["jeff durand"]
@@ -29,7 +29,6 @@ Gem::Specification.new do |s|
      "lib/amazon_ses/base.rb",
      "lib/amazon_ses/stats.rb",
      "lib/amazon_ses/verify.rb",
-     "rails/init.rb",
      "test/helper.rb",
      "test/test_amazon_ses.rb"
   ]
